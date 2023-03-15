@@ -15,6 +15,8 @@
 # spacy3.5.0
 # https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.0.0/en_core_web_sm-3.0.0-py3-none-any.whl
 
+import nltk
+nltk.download("stopwords")
 
 from pyresparser import ResumeParser
 from flask import Flask, request, jsonify
